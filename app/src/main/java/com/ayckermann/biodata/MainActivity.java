@@ -16,18 +16,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void alamat(View view){
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("google.streetview:cbll=46.414382,10.013988"));
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/maps/wu8kinNjAvbaYhCs6"));
         mapIntent.setPackage("com.google.android.apps.maps");
         startActivity(mapIntent);
     }
     public void telepon(View view){
         Intent telIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:085158305118"));
-        telIntent.setPackage("com.google.android.apps.maps");
         startActivity(telIntent);
     }
     public void email(View view){
-        Intent mailIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("google.streetview:cbll=46.414382,10.013988"));
-        mailIntent.setPackage("com.google.android.apps.maps");
+        Intent mailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:ayatullahmaarif@gmail.com"));
         startActivity(mailIntent);
     }
 }
