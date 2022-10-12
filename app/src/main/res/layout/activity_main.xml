@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/background2"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
     tools:context=".MainActivity">
@@ -16,14 +16,12 @@
         android:fontFamily="@font/courgette"
         android:text="Ayatullah Ma'arif"
         android:textColor="#000000"
-        android:textSize="32sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.111" />
+        app:layout_constraintVertical_bias="0.108" />
 
     <TextView
         android:id="@+id/nim"
@@ -41,55 +39,65 @@
 
     <ImageView
         android:id="@+id/foto"
-        android:layout_width="0dp"
-        android:layout_height="170dp"
-        android:layout_marginEnd="28dp"
+        android:layout_width="109dp"
+        android:layout_height="160dp"
+        android:background="@drawable/bound2"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="15dp"
         android:src="@drawable/pasfoto4x6png"
         app:layout_constraintBottom_toBottomOf="@+id/nim"
-        app:layout_constraintEnd_toStartOf="@+id/nama"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nama"
         app:layout_constraintTop_toTopOf="@+id/nama"
-        app:layout_constraintVertical_bias="0.396" />
+        app:layout_constraintVertical_bias="0.621" />
 
     <TextView
         android:id="@+id/desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/bound2"
         android:fontFamily="cursive"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:text="Description"
         android:textColor="#000000"
         android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nama"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Saya Aya kadang dipanggil Jay, tapi bukan gay"
+        android:background="@drawable/bound2"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="Hai! Nama saya Aya, Saya sedang belajar di Universitas Dian Nuswantoro Program Studi Teknik Informatika. Saya sedang menekuni pemorgraman perangkat bergerak."
+        android:textAlignment="viewStart"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/desc" />
 
     <TextView
         android:id="@+id/hobby"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/bound2"
         android:fontFamily="cursive"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:text="Hobby"
         android:textColor="#000000"
         android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/desc" />
 
     <TextView
@@ -97,39 +105,48 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Hidup PSSI"
+        android:background="@drawable/bound2"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="- Musik\n- Game\n- Programming"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hobby" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/alamat"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="384dp"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="#fff"
         android:onClick="alamat"
         android:text="Address"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nama" />
+        app:layout_constraintTop_toBottomOf="@+id/nama"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/telepon"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundbutton"
         android:onClick="telepon"
         android:text="Telephone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/alamat" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundbutton"
         android:onClick="email"
         android:text="Email"
         app:layout_constraintEnd_toEndOf="parent"

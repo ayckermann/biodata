@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void alamat(View view){
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/maps/wu8kinNjAvbaYhCs6"));
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.codes/6P5G3QVX+5X"));
         mapIntent.setPackage("com.google.android.apps.maps");
         startActivity(mapIntent);
     }
